@@ -1,4 +1,4 @@
-**MNIST Handwritten Digit Classifier**
+**MNIST Handwritten Digit Classifier using CNN**
 
 
 An implementation of multilayer neural network using keras with an accuracy of 97.314% and using tensorflow with an accuracy over 99%.
