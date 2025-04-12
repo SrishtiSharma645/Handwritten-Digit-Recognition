@@ -1,87 +1,28 @@
-##MNIST Digit Recognition CNN Model - README
-#Overview
-This repository contains a Convolutional Neural Network (CNN) implemented in Python using TensorFlow/Keras for recognizing handwritten digits from the MNIST dataset. The model achieves high accuracy in classifying digits 0-9.
+**MNIST Handwritten Digit Classifier**
+An implementation of multilayer neural network using keras with an accuracy of 97.314% and using tensorflow with an accuracy over 99%.
 
-#Features
-CNN architecture with 2 convolutional layers and max pooling
+**About MNIST dataset:**
+The MNIST database (Modified National Institute of Standards and Technology database) of handwritten digits consists of a training set of 60,000 examples, and a test set of 10,000 examples. It is a subset of a larger set available from NIST. Additionally, the black and white images from NIST were size-normalized and centered to fit into a 28x28 pixel bounding box and anti-aliased, which introduced grayscale levels.
 
-Dropout layer to prevent overfitting
+**Structure of Neural Network:**
+A neural network is made up by stacking layers of neurons, and is defined by the weights of connections and biases of neurons. Activations are a result dependent on a certain input.
 
-Training and validation accuracy visualization
+This structure is known as a feedforward architecture because the connections in the network flow forward from the input layer to the output layer without any feedback loops. In this figure:
 
-Model evaluation on test data
+> The input layer contains the predictors.
+> The hidden layer contains unobservable nodes, or units. The value of each hidden unit is some function of the predictors; the exact form of the function depends in part upon the network type and in part upon user-controllable specifications.
+> The output layer contains the responses. Since the history of default is a categorical variable with two categories, it is recoded as two indicator variables. Each output unit is some function of the hidden units. Again, the exact form of the function depends in part on the network type and in part on user-controllable specifications.
+![image](https://github.com/user-attachments/assets/e70af391-0ba3-4cad-a7b0-bec5be496c8a)
 
-Prediction visualization on sample images
+**Summary of Sequential model**
+![image](https://github.com/user-attachments/assets/6cb96fba-1877-4f10-8837-0d7f5b991dde)
 
-Model saving capability
 
-#Requirements
-Python 3.6+
 
-TensorFlow 2.x
+**Prerequisites**
+Python 3.5
+OpenCV
 
-NumPy
-
-Matplotlib
-
-#Installation
-Clone this repository
-
-Install required packages:
-
-pip install tensorflow numpy matplotlib
-#Usage
-Run the script to:
-
-Load and preprocess MNIST dataset
-
-Build and train the CNN model
-
-Evaluate model performance
-
-Visualize predictions
-
-Save the trained model
-
-#Training the Model
-The model trains for 10 epochs with a batch size of 128. 20% of the training data is used for validation.
-
-#Model Architecture
-Sequential([
-    Conv2D(32, (3,3), activation='relu', input_shape=(28,28,1)),
-    MaxPooling2D((2,2)),
-    Conv2D(64, (3,3), activation='relu'),
-    MaxPooling2D((2,2)),
-    Flatten(),
-    Dense(128, activation='relu'),
-    Dropout(0.5),
-    Dense(10, activation='softmax')
-])
-#Performance
-The model typically achieves:
-
-Training accuracy: ~99%
-
-Validation accuracy: ~98-99%
-
-Test accuracy: ~98-99%
-
-#Output
-Training progress (accuracy/loss per epoch)
-
-Accuracy plot (training vs validation)
-
-Sample predictions visualization
-
-Saved model file: digit_recognition_cnn_model.h5
-
-#How to Use the Saved Model
-
-from tensorflow.keras.models import load_model
-model = load_model('digit_recognition_cnn_model.h5')
-predictions = model.predict(new_images)
-#License
-[MIT License] - Feel free to use and modify this code for your projects.
-
-#Contact
-For questions or suggestions, please open an issue in this repository.
+**Result:**
+Following image is the prediction of the model.
+![image](https://github.com/user-attachments/assets/bee61aee-01eb-4f14-a86d-dc51b7d12d56)
