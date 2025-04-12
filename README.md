@@ -25,7 +25,7 @@ This structure is known as a feedforward architecture because the connections in
 
 
 **Prerequisites**
-Python 3.5
+Python 3.5,
 OpenCV
 
 
