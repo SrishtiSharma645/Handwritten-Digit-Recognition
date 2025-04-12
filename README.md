@@ -21,15 +21,22 @@ This structure is known as a feedforward architecture because the connections in
 ![image](https://github.com/user-attachments/assets/e70af391-0ba3-4cad-a7b0-bec5be496c8a)
 
 
-**Summary of Sequential model**
-![image](https://github.com/user-attachments/assets/6cb96fba-1877-4f10-8837-0d7f5b991dde)
-
 
 
 
 **Prerequisites**
 Python 3.5
 OpenCV
+
+
+
+**Model Accuracy**
+![image](https://github.com/user-attachments/assets/ac13f6fc-8886-46d0-9145-f4d0b56f167b)
+
+
+
+
+
 
 **Result:**
 Following image is the prediction of the model.
