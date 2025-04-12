@@ -1,4 +1,6 @@
 **MNIST Handwritten Digit Classifier**
+
+
 An implementation of multilayer neural network using keras with an accuracy of 97.314% and using tensorflow with an accuracy over 99%.
 
 **About MNIST dataset:**
@@ -12,10 +14,16 @@ This structure is known as a feedforward architecture because the connections in
 > The input layer contains the predictors.
 > The hidden layer contains unobservable nodes, or units. The value of each hidden unit is some function of the predictors; the exact form of the function depends in part upon the network type and in part upon user-controllable specifications.
 > The output layer contains the responses. Since the history of default is a categorical variable with two categories, it is recoded as two indicator variables. Each output unit is some function of the hidden units. Again, the exact form of the function depends in part on the network type and in part on user-controllable specifications.
+
+
+
+
 ![image](https://github.com/user-attachments/assets/e70af391-0ba3-4cad-a7b0-bec5be496c8a)
+
 
 **Summary of Sequential model**
 ![image](https://github.com/user-attachments/assets/6cb96fba-1877-4f10-8837-0d7f5b991dde)
+
 
 
 
@@ -25,4 +33,8 @@ OpenCV
 
 **Result:**
 Following image is the prediction of the model.
+
+
+
+
 ![image](https://github.com/user-attachments/assets/bee61aee-01eb-4f14-a86d-dc51b7d12d56)
